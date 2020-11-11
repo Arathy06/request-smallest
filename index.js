@@ -24,12 +24,12 @@ if(getx<gety)
 {
     if(getx<getz)
     {
-        console.log("Smallest is:",getx)
+        res.status(200).json ("Smallest is:",getx)
         
     }
     else
     {
-        console.log("Smallest is:",getz)
+        res.status(200).json("Smallest is:",getz)
         
     }
 }
@@ -37,11 +37,11 @@ else
 {
     if(gety<getz)
         {
-            console.log("Smallest is:",gety)
+            res.status(200).json("Smallest is:",gety)
         }
         else
         {
-            console.log("Smallest is:",getz)
+            res.status(200).json("Smallest is:",getz)
         }
 }
 })
